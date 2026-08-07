@@ -1,0 +1,35 @@
+{
+  "name": "pi-glm-usage",
+  "version": "0.1.2",
+  "description": "A pi extension that displays z.ai (GLM Coding Plan) subscription quota usage in the status bar. Shows 5-hour and weekly quota percentages, plan level, and reset times. Updates every 60 seconds during agent runs.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Maciej Augustyniak <maciej.f.august@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magmast/pi-glm-usage"
+  },
+  "keywords": [
+    "pi-package"
+  ],
+  "pi": {
+    "extensions": [
+      "."
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/temp": "^0.9.4",
+    "temp": "^0.9.4"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "typescript": "^5"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "test:watch": "bun test --watch"
+  }
+}
